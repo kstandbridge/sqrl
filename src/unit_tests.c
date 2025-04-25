@@ -3,7 +3,6 @@
 static int64_t
 Main()
 {
-
     return 0;
 }
 
