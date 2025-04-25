@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "unit_tests",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/unit_tests",
+            "cwd": "${workspaceFolder}/bin",
+        }
+    ]
+}

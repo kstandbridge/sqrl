@@ -3,21 +3,11 @@
 static int64_t
 Main()
 {
-    {
-        uint8_t Buffer[256];
-        buffer String = FormatBuffer(Buffer, "before %s after\n", "foo สวัสดีชาวโลก bar");
-        PlatformWrite(String);
-    }
 
     {
-        uint8_t Buffer[256];
-        Buffer[0] = 'a';
-        Buffer[1] = '\n';
-        Buffer[2] = '\0';
-        buffer String = FormatBuffer(Buffer, "before %d after\n", 1234567890);
-        PlatformWrite(String);
+        WriteFormat("%s(%d): some message\n", __FILE__, __LINE__);
     }
-
+    
     {
         buffer Str1 = CStringToBuffer("สวัสดีชาวโลก");
         buffer Str2 = CStringToBuffer("สวัสดีชาวโลก");
