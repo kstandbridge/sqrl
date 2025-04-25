@@ -5,6 +5,12 @@ Main()
 {
     {
         uint8_t Buffer[256];
+        buffer String = FormatBuffer(Buffer, "before %s after\n", "foo สวัสดีชาวโลก bar");
+        PlatformWrite(String);
+    }
+
+    {
+        uint8_t Buffer[256];
         Buffer[0] = 'a';
         Buffer[1] = '\n';
         Buffer[2] = '\0';
