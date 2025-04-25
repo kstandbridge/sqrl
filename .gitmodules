@@ -1,0 +1,3 @@
+[submodule "lib/xwn"]
+	path = lib/xwn
+	url = git@github.com:kstandbridge/xwn.git

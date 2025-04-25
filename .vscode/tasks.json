@@ -1,0 +1,12 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "unit_tests",
+            "windows": { "command": "${workspaceFolder}/build.bat" },
+            "linux": { "command": "${workspaceFolder}/build.sh" },
+            "presentation": { "clear": true },
+            "group": { "kind": "build", "isDefault": true }
+        }
+    ]
+}
