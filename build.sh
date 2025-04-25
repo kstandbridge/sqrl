@@ -2,7 +2,7 @@ CurDir=$(pwd)
 BuildDir="$CurDir/bin"
 
 IncludeDirectories="-I $CurDir/lib/xwn"
-CommonCompilerFlags="-s -nostdlib -O2 -Wall -Werror -Wno-unused-function -g $IncludeDirectories"
+CommonCompilerFlags="-nostdlib -Og -g -ggdb -Wall -Werror -Wno-unused-function $IncludeDirectories"
 CommonLinkerFlags="-pthread"
 
 [ -d $BuildDir ] || mkdir -p $BuildDir
